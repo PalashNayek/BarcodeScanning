@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48736404179",
+    "project_id": "ml-example-f82b5",
+    "storage_bucket": "ml-example-f82b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48736404179:android:a9a1c3cdb56a0f640aca26",
+        "android_client_info": {
+          "package_name": "com.palash.barcodescanning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHsoMMLsGTf9IlRVwLuZ_yhws6pUdqAc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".fragments.QRScannerFragment">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/preview_background"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay"
+        app:layout_constraintBottom_toBottomOf="@id/cameraPreview"
+        app:layout_constraintEnd_toEndOf="@id/cameraPreview"
+        app:layout_constraintStart_toStartOf="@id/cameraPreview"
+        app:layout_constraintTop_toTopOf="@id/cameraPreview" />
+
+    <View
+        android:id="@+id/scanLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="@id/cameraPreview"
+        app:layout_constraintStart_toStartOf="@id/cameraPreview"
+        app:layout_constraintTop_toTopOf="@id/cameraPreview" />
+
+    <TextView
+        android:id="@+id/barcodeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#AA000000"
+        android:padding="8dp"
+        android:text="@string/scan_a_barcode"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
